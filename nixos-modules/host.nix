@@ -117,6 +117,7 @@ in
 
             ${pkgs.iproute2}/bin/ip tuntap add name $id mode tap user ${user}
             ${pkgs.iproute2}/bin/ip link set $id up
+            ${pkgs.iproute2}/bin/ip link set $id master vmbr0
           done
         '';
       };
