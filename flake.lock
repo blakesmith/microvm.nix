@@ -17,10 +17,10 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1650168658,
-        "narHash": "sha256-DtG/gh/iEw0elz7sIHNDQWYeCQPZ+3qo79D9CweN/j4=",
-        "ref": "master",
-        "rev": "4dfcafc5ed0d164265771799e7e65f5970cab6b2",
+        "lastModified": 1650629794,
+        "narHash": "sha256-oU5ayzojPqi3EnyVYszg3O3i8Q+E8n4I9RQshrjGULE=",
+        "ref": "firectl_latest",
+        "rev": "6c87c725e2c94278a1fdd1b3773deb4dd3dc19cb",
         "revCount": 369993,
         "type": "git",
         "url": "file:///home/blake/src/nixpkgs"
