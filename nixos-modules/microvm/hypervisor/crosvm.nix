@@ -43,7 +43,7 @@ in {
         map (_:
           throw "CrosVM networking is not configurable"
         ) interfaces ++
-        [ "${config.system.build.kernel.dev}/vmlinux" ]
+        [ "${config.microvm.kernel.dev}/vmlinux" ]
       );
 
     canShutdown = false;

@@ -18,7 +18,7 @@ in {
           "--cpus" "boot=${toString vcpu}"
           "--watchdog"
           "--console" "tty"
-          "--kernel" "${config.system.build.kernel.dev}/vmlinux"
+          "--kernel" "${config.microvm.kernel.dev}/vmlinux"
           "--cmdline" "console=hvc0 reboot=t panic=-1 ${toString config.microvm.kernelParams}"
           "--seccomp" "true"
           "--disk" "path=${rootDisk},readonly=on"

@@ -71,7 +71,7 @@ in {
         "-device" "virtio-rng-${devType}"
         "-drive" "id=root,format=raw,media=cdrom,file=${rootDisk},if=none,aio=io_uring"
         "-device" "virtio-blk-${devType},drive=root"
-        "-kernel" "${config.system.build.kernel.dev}/vmlinux"
+        "-kernel" "${config.microvm.kernel.dev}/vmlinux"
         "-append" "console=hvc0 acpi=off reboot=t panic=-1 ${toString config.microvm.kernelParams}"
       ] ++
       lib.optionals canSandbox [
