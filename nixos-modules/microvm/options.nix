@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ pkgs, config, lib, ... }:
 let
   self-lib = import ../../lib {
     nixpkgs-lib = lib;
@@ -199,6 +199,12 @@ in
           };
         };
       });
+    };
+
+    kernel = mkOption {
+      type = types.package;
+      default = pkgs.microvm-kernel;
+      description = "Pass a custom kernel package to 'boot.kernelPackages'. This is usually the output from a 'buildLinux' derivation";
     };
 
     kernelParams = mkOption {

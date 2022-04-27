@@ -11,7 +11,7 @@ in
 
   boot.loader.grub.enable = false;
   boot.kernelPackages = pkgs.linuxPackages_latest.extend (_: _: {
-    kernel = pkgs.microvm-kernel;
+    kernel = config.microvm.kernel;
   });
 
   fileSystems = (
